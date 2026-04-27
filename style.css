@@ -721,7 +721,7 @@ body.loaded .loader {
 
 /* Gallery Cards Layout */
 .gallery-cards {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 1.5rem;
     padding: 0 2rem 4rem;
@@ -1119,8 +1119,8 @@ body.loaded .loader {
     }
 
     .gallery-cards {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(8, auto);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
         gap: 1rem;
         padding: 0 1rem 3rem;
     }
