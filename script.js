@@ -17,6 +17,21 @@ function toggleMenu() {
 
 window.toggleMenu = toggleMenu;
 
+function toggleGallery() {
+    const hiddenCards = document.querySelectorAll(".gallery-card.hidden");
+    const btn = document.querySelector(".load-more-btn");
+    
+    hiddenCards.forEach(card => {
+        card.classList.toggle("show");
+    });
+    
+    if (btn) {
+        btn.textContent = btn.textContent === "Load More" ? "Show Less" : "Load More";
+    }
+}
+
+window.toggleGallery = toggleGallery;
+
 document.querySelectorAll(".nav-links a").forEach((link) => {
     link.addEventListener("click", () => {
         navLinks?.classList.remove("open");
