@@ -84,13 +84,13 @@ const observer = new IntersectionObserver(
 );
 
 document
-    .querySelectorAll("section, .card, .gallery-item, .feature-card, .table-wrap, .contact-form-wrap, .preview-grid a")
+    .querySelectorAll("section, .card, .gallery-item, .gallery-card, .feature-card, .table-wrap, .contact-form-wrap, .preview-grid a")
     .forEach((element) => {
         element.classList.add("reveal");
         observer.observe(element);
     });
 
-const galleryImages = [...document.querySelectorAll(".gallery-item img")];
+const galleryImages = [...document.querySelectorAll(".gallery-item img, .gallery-card img")];
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = lightbox?.querySelector("img");
 let galleryIndex = 0;
